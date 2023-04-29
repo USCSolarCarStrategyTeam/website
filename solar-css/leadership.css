@@ -19,8 +19,19 @@
     font-size: 0.98em;
 }
 
-#solar-profiles .solar-about {
+#solar-profiles .solar-name-right {
+    text-align: right;
+    font-size: 2.5em;
+}
 
+#solar-profiles .solar-position-right {
+    text-align: right;
+    font-size: 1.4em;
+}
+
+#solar-profiles .solar-major-right {
+    text-align: right;
+    font-size: 0.98em;
 }
 
 #solar-profiles .solar-headshot {
@@ -51,9 +62,23 @@
     visibility: visible;
 }
 .solar-img-holder p {
-    font-family: 'Kodchasan', sans-serif;
+    /*font-family: 'Kodchasan', sans-serif;*/
     text-align: center;
     color: #FFF;
+    font-size: 1.1em;
+    margin-bottom: 0.8rem;
+}
+.solar-about-left p {
+    /*font-family: 'Kodchasan', sans-serif;*/
+    text-align: left;
+    color: #000;
+    font-size: 1.1em;
+    margin-bottom: 0.8rem;
+}
+.solar-about-right p {
+    /*font-family: 'Kodchasan', sans-serif;*/
+    text-align: right;
+    color: #000;
     font-size: 1.1em;
     margin-bottom: 0.8rem;
 }
