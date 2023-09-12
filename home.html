@@ -30,33 +30,111 @@
 
     <link rel="icon" href="images/solarcarlogo.png">
   </head>
-  <body>
+  <body onload="test()">
     
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light solar-navbar" id="ftco-navbar" data-aos="fade-down" data-aos-delay="500">
-      <div class="container">
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
+<!--  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light solar-navbar" id="ftco-navbar" data-aos="fade-down" data-aos-delay="500">-->
+<!--      <div class="container">-->
+<!--        -->
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--          <span class="oi oi-menu"></span> Menu-->
+<!--        </button>-->
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav">
-            <a class="navbar-brand active" href="home.html"><img src="images/carlogo.png" alt="SC Solar Car"></a>
-            <li class="nav-item"><a href="" class="nav-link solar-link">THE RACE</a></li>
-            <li class="nav-item"><a href="leadership.html" class="nav-link solar-link">OUR TEAM</a></li>
-            <li class="nav-item"><a href="" class="nav-link solar-link">UPDATES</a></li>
-            <li class="nav-item"><a href="" class="nav-link solar-link">SPONSORS</a></li>
-            <li class="nav-item"><a href="" class="nav-link solar-link">DONATE</a></li>
-            <li class="nav-item"><a href="" class="nav-link solar-link">VEHICLES</a></li>
-            <li class="nav-item"><a href="" class="nav-link solar-link">JOIN</a></li>
-            <li class="nav-item"><a href="" class="nav-link solar-link">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-    <!-- END nav -->
+<!--        <div class="collapse navbar-collapse" id="ftco-nav">-->
+<!--          <ul class="navbar-nav">-->
+<!--            <a class="navbar-brand active" href="home.html"><img src="images/carlogo.png" alt="SC Solar Car"></a>-->
+<!--            <li class="nav-item"><a href="" class="nav-link solar-link">THE RACE</a></li>-->
+<!--            <li class="nav-item"><a href="leadership.html" class="nav-link solar-link">OUR TEAM</a></li>-->
+<!--            <li class="nav-item"><a href="" class="nav-link solar-link">UPDATES</a></li>-->
+<!--            <li class="nav-item"><a href="" class="nav-link solar-link">SPONSORS</a></li>-->
+<!--            <li class="nav-item"><a href="" class="nav-link solar-link">DONATE</a></li>-->
+<!--            <li class="nav-item"><a href="" class="nav-link solar-link">VEHICLES</a></li>-->
+<!--            <li class="nav-item"><a href="" class="nav-link solar-link">JOIN</a></li>-->
+<!--            <li class="nav-item"><a href="" class="nav-link solar-link">CONTACT</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </nav>-->
 
-    <section class="ftco-cover overlay" style="background-image: url(images/openroad.jpg);" id="section-home" data-aos="fade" data-stellar-background-ratio="0.5">
+
+      <!-- sets the photo that is displayed by the home page according to time-->
+      <script>
+
+        function test(){
+
+
+        const x = new Date();
+        const hours = x.getHours();
+        if(hours>6 && hours <18){
+        document.getElementById('section-home').style.backgroundImage = "url(images/openroad.jpg)";
+          }
+
+        else{
+
+        if(hours<=6 && hours >=4){
+          document.getElementById('section-home').style.backgroundImage = "url(images/sunset.jpg)";
+        }
+        else{
+
+
+
+
+
+        document.getElementById('section-home').style.backgroundImage = "url(images/nightsky.jpg)";
+
+
+        var els = document.getElementsByClassName('items'),
+        i = els.length;
+
+        while (i--) {
+          els[i].className = 'items-white';
+          }
+
+          document.getElementById("solar-contact-section").style.backgroundColor = "#161B36";
+          document.getElementById("solar-contact-section").style.color = "white";
+          document.getElementById("solar-realworld").style.background = "#131862";
+          document.getElementById("solar-realworld").style.color = "white";
+          document.getElementById("solar-about-section").style.background = "#161B36";
+          document.getElementById("solar-race-section").style.background = "#2e4482";
+          document.getElementById("solar-race").style.background = "#2e4482";
+          document.getElementById("solar-race").style.color = "white";
+          document.getElementById("solar-about-section").style.color = "white";
+          document.getElementById("solar-leaders").style.color = "white";
+          document.getElementById("solar-leaders").style.background = "#131862";
+          document.getElementById("silver-sponsors").style.background = "white";
+          document.getElementById("silver-sponsors").style.color = "white";
+          document.getElementById("partner-sponsors").style.background = "white";
+          document.getElementById("friend-sponsors").style.background = "white";
+           document.getElementById("solar-leaders-section").style.background = "#131862";
+
+           document.getElementById("solar-sponsors-section").style.background = "radial-gradient(circle at 74.2% 50.9%, rgb(14, 72, 222) 5.2%, rgb(3, 22, 65) 75.3%)";
+
+
+          document.getElementById("imageemail").src = "images/mail_icon_white.svg";
+
+          var els = document.getElementsByClassName('heading'),
+          i = els.length;
+
+        while (i--) {
+          els[i].style.color = "white";
+          }
+
+
+
+
+
+
+
+
+        }
+        }
+
+        }
+
+      </script>
+
+
+
+    <section class="ftco-cover overlay"  id="section-home" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center ftco-vh-100">
           <div class="col-md-8 text-center">
@@ -64,12 +142,14 @@
             <br />
             <br />
             <h1 class="ftco-heading mb-4" data-aos="fade-up" data-aos-delay="600">Southern California Solar Car</h1>
-            <h2 class="h4 ftco-subheading mb-5" data-aos="fade-up"  data-aos-delay="700">Driving Innovation Since 2014</h2>
+            <h2 class="h4 ftco-subheading mb-5" data-aos="fade-up"  data-aos-delay="700">Solar Run, Student Powered since 2014</h2>
           </div>
         </div>
       </div>
     </section>
     <!-- #section-home -->
+
+
 
     <div class="ftco-section" id="solar-contact-section">
       <div class="solar-button-holder">
@@ -83,23 +163,25 @@
         </a>
       </div>
       <div id="solar-email">
-        <img src="images/mail_icon.png" alt="Mail">
+        <img src="images/mail_icon.png" alt="Mail" id="imageemail">
         uscsolarcar@gmail.com
       </div>
+
+
       <div id="solar-socmed">
         <div class="solar-socmed-link" id="solar-fb-link">
           <a href="https://www.facebook.com/uscsolarcar/" target="_blank">
-            <img src="images/facebook_icon.png" alt="Facebook">
+            <img src="images/facebook_icon.png" alt="Facebook" class="items">
           </a>
         </div>
         <div class="solar-socmed-link" id="solar-insta-link">
           <a href="https://www.instagram.com/uscsolarcar/" target="_blank">
-            <img src="images/instagram_icon.png" alt="Instagram">
+            <img src="images/instagram_icon.png" alt="Instagram" class="items">
           </a>
         </div>
         <div class="solar-socmed-link" id="solar-twit-link">
           <a href="https://twitter.com/USCSolarCar" target="_blank">
-            <img src="images/twitter_icon.png" alt="Twitter">
+            <img src="images/twitter_icon.png" alt="Twitter" class="items">
           </a>
         </div>
       </div>
@@ -117,7 +199,7 @@
           <div class="col-md-6 col-lg-4" data-aos="fade-up">
             <div class="media block-6 d-block text-center">
               <!-- <div class="icon mb-4"><span class="flaticon-gavel"></span></div> -->
-              <img src="images/drill.svg" alt="Drill">
+              <img src="images/drill.svg" alt="Drill" id="drillimage" class="items">
               <div class="media-body">
                 <h3 class="heading">Fabrication</h3>
                 <p>Our members learn how to machine, fabricate, and build industrial automotive components from raw materials in our on-campus solar car workshop.</p>
@@ -127,7 +209,7 @@
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="media block-6 d-block text-center">
               <!-- <div class="icon mb-4"><span class="flaticon-balance"></span></div> -->
-              <img src="images/compass.svg" alt="Compass">
+              <img src="images/compass.svg" alt="Compass" class="items">
               <div class="media-body">
                 <h3 class="heading">Design</h3>
                 <p>We pride ourselves on custom designing and testing almost every component of our vehicle from the ground up using Solidworks 3D CAD & ANSYS Simulation software.</p>
@@ -137,7 +219,7 @@
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="media block-6 d-block text-center">
               <!-- <div class="icon mb-4"><span class="flaticon-lawyer"></span></div> -->
-              <img src="images/handshake.svg" alt="Handshake">
+              <img src="images/handshake.svg" alt="Handshake" class="items">
               <div class="media-body">
                 <h3 class="heading">Business</h3>
                 <p>Our well rounded in-house business, fundraising, and marketing teams tackle the real world challenges of securing donations & strategic partnerships with cutting edge engineering firms.</p>
@@ -188,7 +270,7 @@
       </div>
     </div>
 
-  <div class="ftco-section solar-leader-section">
+  <div class="ftco-section solar-leader-section" id="solar-leaders-section">
     <div class="container">
       <div class="row justify-content-center" id="solar-leaders">
         <div class="col-md-10 col-md-4 mb-4" data-aos="fade-up">
@@ -201,6 +283,8 @@
             <div id="solar-eboard-holder">
               <img src="images/eboard2022.jpg" alt="eBoard" class="img-fluid">
             </div>
+
+
           </div>
         </div>
 
@@ -312,6 +396,10 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
-    
+
+
+
+
   </body>
 </html>
+
