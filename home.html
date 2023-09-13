@@ -88,8 +88,14 @@
         while (i--) {
           els[i].className = 'items-white';
           }
+          var els = document.getElementsByClassName('ftco-cover overlay'),
+          i = els.length;
+          while(i--){
+            els[i].style.backgroundColor = "rgb (9,9,9)";
+          }
 
-          document.getElementById("solar-contact-section").style.backgroundColor = "#161B36";
+
+          document.getElementById("solar-contact-section").style.background = "#161B36";
           document.getElementById("solar-contact-section").style.color = "white";
           document.getElementById("solar-realworld").style.background = "#131862";
           document.getElementById("solar-realworld").style.color = "white";
@@ -108,8 +114,13 @@
 
            document.getElementById("solar-sponsors-section").style.background = "radial-gradient(circle at 74.2% 50.9%, rgb(14, 72, 222) 5.2%, rgb(3, 22, 65) 75.3%)";
 
-
+          document.getElementById("drillimage").src = "images/drill_white.svg";
+          document.getElementById("compassimage").src = "images/compass_white.svg";
+          document.getElementById("handshakeimage").src = "images/handshake_white.svg";
           document.getElementById("imageemail").src = "images/mail_icon_white.svg";
+          document.getElementById("twittericon").src = "images/twitter_icon_white.svg";
+          document.getElementById("instagramicon").src = "images/instagram_icon_white.svg";
+          document.getElementById("facebookicon").src = "images/facebook_icon_white.svg";
 
           var els = document.getElementsByClassName('heading'),
           i = els.length;
@@ -134,7 +145,7 @@
 
 
 
-    <section class="ftco-cover overlay"  id="section-home" data-aos="fade" data-stellar-background-ratio="0.5">
+    <section class="ftco-cover overlay"  id="section-home" data-aos="fade" data-stellar-background-ratio="1" >
       <div class="container">
         <div class="row align-items-center justify-content-center ftco-vh-100">
           <div class="col-md-8 text-center">
@@ -171,17 +182,17 @@
       <div id="solar-socmed">
         <div class="solar-socmed-link" id="solar-fb-link">
           <a href="https://www.facebook.com/uscsolarcar/" target="_blank">
-            <img src="images/facebook_icon.png" alt="Facebook" class="items">
+            <img src="images/facebook_icon.png" alt="Facebook" class="items" id="facebookicon">
           </a>
         </div>
         <div class="solar-socmed-link" id="solar-insta-link">
           <a href="https://www.instagram.com/uscsolarcar/" target="_blank">
-            <img src="images/instagram_icon.png" alt="Instagram" class="items">
+            <img src="images/instagram_icon.png" alt="Instagram" class="items" id="instagramicon">
           </a>
         </div>
         <div class="solar-socmed-link" id="solar-twit-link">
           <a href="https://twitter.com/USCSolarCar" target="_blank">
-            <img src="images/twitter_icon.png" alt="Twitter" class="items">
+            <img src="images/twitter_icon.png" alt="Twitter" class="items" id="twittericon">
           </a>
         </div>
       </div>
@@ -209,7 +220,7 @@
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="media block-6 d-block text-center">
               <!-- <div class="icon mb-4"><span class="flaticon-balance"></span></div> -->
-              <img src="images/compass.svg" alt="Compass" class="items">
+              <img src="images/compass.svg" alt="Compass" class="items" id="compassimage">
               <div class="media-body">
                 <h3 class="heading">Design</h3>
                 <p>We pride ourselves on custom designing and testing almost every component of our vehicle from the ground up using Solidworks 3D CAD & ANSYS Simulation software.</p>
@@ -219,7 +230,7 @@
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="media block-6 d-block text-center">
               <!-- <div class="icon mb-4"><span class="flaticon-lawyer"></span></div> -->
-              <img src="images/handshake.svg" alt="Handshake" class="items">
+              <img src="images/handshake.svg" alt="Handshake" class="items" id="handshakeimage">
               <div class="media-body">
                 <h3 class="heading">Business</h3>
                 <p>Our well rounded in-house business, fundraising, and marketing teams tackle the real world challenges of securing donations & strategic partnerships with cutting edge engineering firms.</p>
