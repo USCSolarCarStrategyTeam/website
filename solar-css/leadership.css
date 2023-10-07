@@ -42,6 +42,7 @@
 .solar-img-holder {
     overflow: hidden;
     position: relative;
+
 }
 
 .solar-overlay {
@@ -81,4 +82,32 @@
     color: #000;
     font-size: 1.1em;
     margin-bottom: 0.8rem;
+}
+.flexcontainer {
+  display: flex;
+  flex-flow: column wrap;
+}
+.sketchy {
+    display: inline-block;
+    width: 100%;
+    border: 3px solid #333333;
+    font-size: 2.5rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: #ffffff;
+    position: relative;
+
+    &::before {
+        content: '';
+        border: 2px solid #353535;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
 }

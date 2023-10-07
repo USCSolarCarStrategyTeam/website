@@ -77,12 +77,14 @@
 }
 
 #solar-eboard-holder {
-    overflow: hidden;
     position: relative;
+
 }
 
 #solar-eboard-holder img {
+
     max-width: 90%;
+    height: auto%;
 }
 
 .mb-4, .my-4 {
