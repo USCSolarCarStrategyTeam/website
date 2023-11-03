@@ -1,4 +1,4 @@
-# website
+# Website
 USC Solar Car Team Website
 
 The template we are adapting for our site has a ton of great content, but also
@@ -9,7 +9,7 @@ originates in the template:
 -All external CSS files we write should be located in the "solar-css" folder.
 -Any class or id written within these CSS files should be titled following the
  format "solar-xyz"
-    -For example, "#solar-header" or ".solar-title"
+    -For example: "#solar-header" or ".solar-title"
 
 These practices should make it very easy for us to distinguish our CSS from the
 template's CSS. Also, since we'll be more familiar with the CSS we write, this
