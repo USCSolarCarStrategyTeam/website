@@ -160,6 +160,22 @@
     margin-bottom: 1em;
 }
 
+
+#solar-time-section {
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+#solar-time-section .solar-title {
+    text-align: center;
+}
+
+#solar-time .solar-paragraph {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 .solar-button {
     transition: background-color 0.25s ease, box-shadow 0.25s ease;
     line-height: 1;
